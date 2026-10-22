@@ -1,0 +1,27 @@
+/* you can target tags in your svg in the same way as you target
+other HTML */
+
+.ham_eye{
+    /* ...but, how you style it is slightly different
+    the eye shape, so it has a stroke and a fill */
+    fill: rgb(255,0,0);
+    stroke: black;
+    stroke-width: 4px;
+}
+
+/* you can use transform and transition to animate objects in SGVs */
+.circle{
+    /* put the transition on all the circles */
+    transition:all 1s;
+
+    /* tell each group of circles to rotate around its centre */
+    transform-origin: 50% 50%;
+}
+
+.circles:hover .c1{
+    transform:rotate(30deg);
+}
+
+.circles:hover .c2{
+    transform:rotate(60deg);
+}
