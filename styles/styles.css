@@ -25,3 +25,37 @@ other HTML */
 .circles:hover .c2{
     transform:rotate(60deg);
 }
+
+
+/* making a triangle with borders... */
+.borderTriangle{
+    width:0;
+    height:0;
+    /* if an element has no width and no height, it can still
+    have a border */
+    border:25px solid transparent;
+    border-top-color:green;
+}
+
+/* make a shape and clipping mask */
+.clipper{
+    width:200px;
+    height:200px;
+    background-color:brown;
+
+    /* clip-path changes the appearance of the element (like a mask
+    in illustrator or photoshop */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    float:left;
+
+    /* shape-outside tells the shape how to behave, and lets text
+    wrap around a shape */
+    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.hamster{
+    float:left;
+
+    shape-outside: polygon(0% 20%, 85% 20%, 97% 40%, 100% 50%, 100% 60%, 97% 65%, 90% 75%, 85% 80%, 0% 80%);
+}
